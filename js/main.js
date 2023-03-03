@@ -15,10 +15,12 @@ const scelta = document.getElementById('difficulty');
 //evento per generare la griglia in base alla difficoltà al click del pulsante play
 play.addEventListener('click',
     function () {
+        //resetto la vecchia griglia dandle un contenuto vuoto
         gridDom.innerHTML = '';
         //nascondo la scritta di info per l'utente
         info.classList.add('d-none');
         console.log(scelta.value);
+        //Se l'utente ha selezionato la difficoltà 1 faccio apparire la griglia con 100 square dentro
         if (scelta.value == 1) {
             for (let i = 1; i <= 100; i++) {
                 //creo i quadrati da inserire nella griglia
@@ -34,6 +36,7 @@ play.addEventListener('click',
                 );
                 gridDom.append(currentSquare);
             }
+        //Se l'utente ha selezionato la difficoltà 2 faccio apparire la griglia con 81 square dentro
         } else if (scelta.value == 2) {
             for (let i = 1; i <= 81; i++) {
                 //creo i quadrati da inserire nella griglia
@@ -49,6 +52,7 @@ play.addEventListener('click',
                 );
                 gridDom.append(currentSquare);
             }
+        //Se l'utente ha selezionato la difficoltà 3 faccio apparire la griglia con 49 square dentro
         } else {
             for (let i = 1; i <= 49; i++) {
                 //creo i quadrati da inserire nella griglia
