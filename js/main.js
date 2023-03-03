@@ -11,11 +11,12 @@ const info = document.getElementById('info');
 //identifico la scelta dell'utente
 const scelta = document.getElementById('difficulty');
 
-let numeriProgressivi = [];
 
-//evento per generare la griglia al click del pulsante play
+//evento per generare la griglia in base alla difficoltà al click del pulsante play
 play.addEventListener('click',
     function () {
+        gridDom.innerHTML = '';
+        //nascondo la scritta di info per l'utente
         info.classList.add('d-none');
         console.log(scelta.value);
         if (scelta.value == 1) {
