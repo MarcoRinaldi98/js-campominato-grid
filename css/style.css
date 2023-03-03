@@ -8,7 +8,7 @@
 
 /* VARIABILI */
 :root {
-    --ms-primary-color: #;
+    --ms-primary-color: #7fffd4;
     --ms-secondary-color: #;
     --ms-text-white: #fff;
     --ms-text-black: #000;
@@ -21,8 +21,18 @@
 html{
     font-family: sans-serif;
 }
-
-
+header {
+    height: 70px;
+    background-color: var(--ms-text-white);
+}
+main {
+    height: calc(100vh - 70px - 70px);
+    background-color: var(--ms-primary-color);
+}
+footer {
+    height: 70px;
+    background-color: var(--ms-text-white);
+}
 
 
 
