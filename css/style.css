@@ -21,14 +21,37 @@
 html{
     font-family: sans-serif;
 }
+/* HEADER */
 header {
     height: 70px;
     background-color: var(--ms-text-white);
 }
+/* MAIN */
 main {
     height: calc(100vh - 70px - 70px);
     background-color: var(--ms-primary-color);
+    padding-top: 50px;
 }
+#grid {
+    width: 600px;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.ms_square {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+    border: 2px solid var(--ms-text-black);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+
+/* FOOTER */
 footer {
     height: 70px;
     background-color: var(--ms-text-white);
