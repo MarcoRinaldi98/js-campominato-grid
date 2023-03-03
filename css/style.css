@@ -9,7 +9,7 @@
 /* VARIABILI */
 :root {
     --ms-primary-color: #7fffd4;
-    --ms-secondary-color: #;
+    --ms-secondary-color: #45adeb;
     --ms-text-white: #fff;
     --ms-text-black: #000;
 }
@@ -40,12 +40,25 @@ main {
     flex-wrap: wrap;
 }
 .ms_square {
-    width: calc(100% / 10);
-    height: calc(100% / 10);
     border: 2px solid var(--ms-text-black);
     display: flex;
     justify-content: center;
     align-items: center;
+}
+.ms_square_1 {
+    width: calc(100% / 10);
+    height: calc(100% / 10);
+}
+.ms_square_2 {
+    width: calc(100% / 9);
+    height: calc(100% / 9);
+}
+.ms_square_3 {
+    width: calc(100% / 7);
+    height: calc(100% / 7);
+}
+.ms_square.clicked {
+    background-color: var(--ms-secondary-color);
 }
 
 
